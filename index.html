@@ -43,7 +43,7 @@
 <p style="margin: 0; max-width: 46ch; color: var(--neutros-muted)">Estudante de Análise e Desenvolvimento de Sistemas na Unoeste e estagiário de Suporte de TI pelo PROATI (SEDUC-SP). Técnico pelo SENAI, onde desenvolvi o GameFinder como TCC.</p>
 </div>
 <div style="display: flex; flex-direction: column; align-items: flex-start; gap: var(--space-4)">
-<p style="margin: 0; display: flex; align-items: center; gap: var(--space-2)" class="an-eyebrow"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: var(--radius-full); background: var(--estados-success); display: inline-block"></span>Aberto a oportunidades</p>
+<p style="margin: 0; display: flex; align-items: center; gap: var(--space-2)" class="an-eyebrow"><span class="status-dot" aria-hidden="true"></span>Aberto a oportunidades</p>
 <div style="display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-5)">
 <a class="an-btn an-btn--primary" href="#projetos">Ver projetos</a>
 <a class="an-ulink" href="https://github.com/aangelkjpn" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
@@ -56,7 +56,7 @@
 <section class="an-labeled" aria-labelledby="sobre-titulo">
 <h2 class="an-labeled__label" id="sobre-titulo">Sobre</h2>
 <div class="about">
-<img src="assets/img/profile/profile-2.webp" alt="Foto de Angelo Gabriel" style="width: 160px; height: 160px; object-fit: cover; filter: grayscale(100%); display: block">
+<img class="avatar" src="assets/img/profile/profile-2.webp" alt="Foto de Angelo Gabriel">
 <div style="display: flex; flex-direction: column; gap: var(--space-5)">
 <p class="editorial-h3" style="margin: 0; max-width: 34ch; color: var(--neutros-text)">Gosto de resolver problemas que eu mesmo vejo de perto, no estágio, na faculdade e em casa.</p>
 <p style="margin: 0; max-width: 62ch; color: var(--neutros-muted)">Comecei no curso técnico de Análise e Desenvolvimento de Sistemas do SENAI, com front-end, back-end e banco de dados. Hoje curso o tecnólogo em ADS na Unoeste e faço estágio de Suporte de TI numa escola estadual, onde, por iniciativa própria, criei os sistemas que a equipe usa para emprestar equipamentos e organizar os notebooks em sala.</p>
@@ -101,10 +101,10 @@
 </article>
 
 <article class="an-project an-span-2">
-<div class="an-project__media" style="aspect-ratio: 16 / 9"><img loading="lazy" width="800" height="450" class="an-project__img" src="assets/img/projetos/fluxo.jpg" alt="Painel do Meu Fluxo com entradas, gastos por categoria e meta de reserva"></div>
+<div class="an-project__media" style="aspect-ratio: 16 / 9"><img loading="lazy" width="800" height="450" class="an-project__img" src="assets/img/projetos/fluxo.jpg" alt="Painel do Meu Fluxo com quanto sobrou no mês, a divisão entre gastos, reserva e sobra, e os gastos por categoria"></div>
 <p class="an-eyebrow">Web · Projeto pessoal</p>
 <h3 class="an-project__title">Meu Fluxo</h3>
-<p class="an-project__desc">Controle financeiro pessoal com painel do mês, gastos por categoria, meta de reserva e histórico. Instala no celular como app.</p>
+<p class="an-project__desc">Controle financeiro pessoal com painel do mês, gastos por categoria, parcelas, meta de reserva e histórico. Funciona sem conta, instala como app e sincroniza entre o PC e o celular.</p>
 <div class="proj-links">
 <a class="an-ulink" href="https://aangelkjpn.github.io/Fluxo_Controle_Financeiro/" target="_blank" rel="noopener noreferrer">Ver ao vivo ↗</a>
 <a class="an-ulink" href="https://github.com/aangelkjpn/Fluxo_Controle_Financeiro" target="_blank" rel="noopener noreferrer">Código ↗</a>
@@ -156,7 +156,7 @@
 <ul class="an-cols__list">
 <li class="an-cols__item"><span class="an-cols__title">HTML e CSS</span><p class="an-cols__desc">Todos os sistemas do estágio e este site.</p></li>
 <li class="an-cols__item"><span class="an-cols__title">JavaScript</span><p class="an-cols__desc">Controle de TI, Chamada dos Notebooks e Meu Fluxo.</p></li>
-<li class="an-cols__item"><span class="an-cols__title">Bootstrap</span><p class="an-cols__desc">Interface do Meu Fluxo.</p></li>
+<li class="an-cols__item"><span class="an-cols__title">Bootstrap</span><p class="an-cols__desc">Interface do Controle de TI e do Meu Fluxo.</p></li>
 </ul>
 </section>
 <section class="an-cols__col">
@@ -172,7 +172,7 @@
 <ul class="an-cols__list">
 <li class="an-cols__item"><span class="an-cols__title">Git e GitHub</span><p class="an-cols__desc">Versionamento e publicação no GitHub Pages.</p></li>
 <li class="an-cols__item"><span class="an-cols__title">Google Apps Script</span><p class="an-cols__desc">Integração da Chamada com o Google Planilhas.</p></li>
-<li class="an-cols__item"><span class="an-cols__title">Supabase</span><p class="an-cols__desc">Sincronização de dados do Meu Fluxo.</p></li>
+<li class="an-cols__item"><span class="an-cols__title">Supabase</span><p class="an-cols__desc">Login e sincronização do Meu Fluxo entre aparelhos.</p></li>
 <li class="an-cols__item"><span class="an-cols__title">Python</span><p class="an-cols__desc">Certificação Python Essentials, da Cisco.</p></li>
 </ul>
 </section>
