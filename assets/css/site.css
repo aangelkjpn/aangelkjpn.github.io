@@ -1,0 +1,28 @@
+/* Estilos próprios do portfólio. Valores sempre dos tokens do Design System. */
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--neutros-bg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a{color:#ededed}a:not(.an-btn):hover{color:#ffffff}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--space-6);box-sizing:border-box}
+.hero-foot{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-6);align-items:end}
+.about{display:grid;grid-template-columns:160px minmax(0,1fr);gap:var(--space-6);align-items:start}
+.tl-row{display:grid;grid-template-columns:200px minmax(0,1fr);gap:var(--space-5);padding:var(--space-5) 0;border-bottom:1px solid var(--neutros-border)}
+.tl-row:first-child{padding-top:0}
+.certs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--space-6)}
+.cert{display:flex;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) 0;border-bottom:1px solid var(--neutros-border)}
+.proj-links{display:flex;flex-wrap:wrap;gap:var(--space-4);margin-top:var(--space-2)}
+.contact-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--neutros-border)}
+.contact-row{display:grid;grid-template-columns:200px minmax(0,1fr) auto;gap:var(--space-5);align-items:baseline;padding:var(--space-5) 0;border-bottom:1px solid var(--neutros-border);text-decoration:none;color:var(--neutros-text)}
+.contact-row .handle{font:var(--text-editorial-h3);letter-spacing:-.01em;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.22em;text-decoration-color:var(--neutros-subtle);overflow-wrap:anywhere;transition:text-decoration-color .15s ease}
+.contact-row .arrow{color:var(--neutros-muted);transition:transform .15s ease,color .15s ease}
+.contact-row:hover .handle{text-decoration-color:var(--neutros-text)}
+.contact-row:hover .arrow{color:var(--neutros-text);transform:translate(2px,-2px)}
+@media (prefers-reduced-motion:reduce){.contact-row .arrow,.contact-row .handle{transition:none}.contact-row:hover .arrow{transform:none}}
+@media (max-width:720px){
+  .wrap{padding:0 var(--space-4)}
+  .hero-foot,.about,.certs{grid-template-columns:1fr}
+  .tl-row{grid-template-columns:1fr;gap:var(--space-2)}
+  .cert{flex-direction:column;gap:var(--space-1)}
+  .contact-row{grid-template-columns:minmax(0,1fr) auto;gap:var(--space-2)}
+  .contact-row .an-eyebrow{grid-column:1 / -1}
+}

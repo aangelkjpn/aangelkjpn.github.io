@@ -1,0 +1,151 @@
+/* Sistema do Angelo — tokens. Não edite aqui: mude no Design System e copie de novo. */
+:root, [data-theme="light"] {
+  --neutros-bg: #0a0a0a; /* Fundo principal da página. Não usar #000 puro em áreas grandes. */
+  --neutros-surface: #141414; /* Cards, seções elevadas, modais. Diferencia camadas sem precisar de sombra. */
+  --neutros-border: #2a2a2a; /* Bordas de 1px e divisórias. Puramente decorativa, nunca para texto. */
+  --neutros-text: #ededed; /* Texto principal e títulos. Contraste 16.9:1 sobre bg. */
+  --neutros-muted: #a1a1a1; /* Texto secundário, descrições, metadados. Contraste 7.7:1, pode ser usado em texto de leitura. */
+  --neutros-subtle: #6b6b6b; /* Só placeholder, estado desabilitado e legendas grandes. Contraste 3.7:1, nunca usar em texto de leitura. */
+  --acento-base: #5b9dff; /* Única cor de destaque. Usar só em links, anel de foco e no CTA principal. No máximo um elemento de destaque por tela. */
+  --acento-on: #0a0a0a; /* Texto e ícones sobre fundo acento-base (ex.: botão primário). Nunca usar branco sobre o acento: reprova no contraste. */
+  --estados-success: #3fb950; /* Confirmações e sucesso. Sempre acompanhado de ícone ou texto, nunca só a cor. */
+  --estados-error: #f85149; /* Erros e ações destrutivas. Sempre acompanhado de ícone ou texto, nunca só a cor. */
+  --estados-warning: #e3a13b; /* Avisos e atenção. Sempre acompanhado de ícone ou texto, nunca só a cor. */
+  --shadow-overlay: 0 8px 24px #00000080; /* Só para elementos que flutuam sobre o conteúdo: dropdowns, modais, popovers e toasts. Usar sempre junto com borda de 1px em neutros-border. Cards e seções não têm sombra. */
+}
+:root {
+  --space-1: 4px; /* Ajustes finos: entre ícone e texto, dentro de badges. */
+  --space-2: 8px; /* Entre label e input, gaps internos pequenos. */
+  --space-3: 12px; /* Padding vertical de botões; gaps em listas compactas do modo Produto. */
+  --space-4: 16px; /* Padding de cards compactos e margem lateral no mobile. */
+  --space-5: 24px; /* Padding de cards; gap entre elementos de um mesmo bloco. */
+  --space-6: 32px; /* Entre blocos dentro de uma seção. */
+  --space-7: 48px; /* Entre grupos grandes; separação de seções no modo Produto. */
+  --space-8: 64px; /* Separação de seções no mobile (modo Editorial). */
+  --space-9: 96px; /* Separação de seções no desktop (modo Editorial). */
+  --space-10: 128px; /* Respiro extra: hero e seções de impacto. */
+  --radius-none: 0px; /* Padrão do modo Editorial: imagens, seções, divisórias e botões com visual mais afiado. */
+  --radius-sm: 2px; /* Inputs, tags e badges. */
+  --radius-md: 4px; /* Padrão do modo Produto: botões e cards. */
+  --radius-lg: 6px; /* Modais, dropdowns e cards grandes. Valor máximo para elementos de conteúdo. */
+  --radius-full: 9999px; /* Só para avatares e indicadores circulares (ponto de status). Nunca usar em botões. */
+  --font-gloock: 'Gloock', sans-serif;
+  --font-geist: 'Geist', sans-serif;
+  --font-geist-mono: 'Geist Mono', sans-serif;
+  --font-archivo: 'Archivo', sans-serif;
+  --font-jet-brains-mono: 'Jet Brains Mono', sans-serif;
+  --font-archivo-expanded: 'Archivo Expanded', sans-serif;
+  --text-editorial-display: 400 72px/1 var(--font-gloock); /* Título do hero e frases de impacto. No mobile, reduzir para ~44px. */
+  --text-editorial-h1: 400 48px/1.1 var(--font-gloock); /* Título principal de página ou seção grande. */
+  --text-editorial-h2: 400 32px/1.2 var(--font-gloock); /* Títulos de seção. */
+  --text-editorial-h3: 500 20px/1.3 var(--font-geist); /* Subtítulos e títulos de cards. Em Geist para contrastar com a serifa. */
+  --text-editorial-body: 400 16px/1.6 var(--font-geist); /* Texto corrido e parágrafos. */
+  --text-editorial-small: 400 14px/1.5 var(--font-geist); /* Legendas, metadados, notas. */
+  --text-editorial-label: 500 12px/1.4 var(--font-geist-mono); /* Labels, datas, tags e numeração de seção. Sempre em CAIXA ALTA. */
+  --text-tecnico-display: 800 64px/1 var(--font-archivo-expanded); /* Título de impacto. Usar largura expandida (font-stretch: 125%). */
+  --text-tecnico-h1: 700 40px/1.1 var(--font-archivo); /* Título de página ou tela. */
+  --text-tecnico-h2: 600 28px/1.2 var(--font-archivo); /* Títulos de seção e painéis. */
+  --text-tecnico-h3: 600 18px/1.3 var(--font-archivo); /* Títulos de cards, tabelas e formulários. */
+  --text-tecnico-body: 400 16px/1.5 var(--font-archivo); /* Texto padrão de interface. Line height menor que o editorial, para densidade. */
+  --text-tecnico-small: 400 13px/1.4 var(--font-archivo); /* Legendas, textos de ajuda em formulários, metadados. */
+  --text-tecnico-data: 400 13px/1.4 var(--font-jet-brains-mono); /* Números, tabelas, valores, códigos e IDs. Alinha dígitos verticalmente. */
+}
+.editorial-display {
+  font-family: var(--font-gloock);
+  font-size: 72px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.editorial-h1 {
+  font-family: var(--font-gloock);
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.editorial-h2 {
+  font-family: var(--font-gloock);
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.editorial-h3 {
+  font-family: var(--font-geist);
+  font-size: 20px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.editorial-body {
+  font-family: var(--font-geist);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.editorial-small {
+  font-family: var(--font-geist);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.editorial-label {
+  font-family: var(--font-geist-mono);
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+}
+.tecnico-display {
+  font-family: var(--font-archivo-expanded);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.tecnico-h1 {
+  font-family: var(--font-archivo);
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.tecnico-h2 {
+  font-family: var(--font-archivo);
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+.tecnico-h3 {
+  font-family: var(--font-archivo);
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0em;
+}
+.tecnico-body {
+  font-family: var(--font-archivo);
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.tecnico-small {
+  font-family: var(--font-archivo);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+.tecnico-data {
+  font-family: var(--font-jet-brains-mono);
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0em;
+}
+/* Fontes: Gloock, Geist e Geist Mono vêm do Google Fonts (link no <head> do index.html). */
